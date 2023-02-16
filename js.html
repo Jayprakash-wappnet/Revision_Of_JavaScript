@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <h1>this is for testing </h1>
+    <p>if you use document.write() aftrr page is loading then it will delete all content of the documenrt</p>
+    <p id="demo1"></p>
+    <p id="demo1"></p>
+
+    <button type="button" id="btn" onclick="myfun()">click me</button>
+    <script>
+        let x;
+        function myfun(){
+            document.getElementById("demo").innerHTML = "Jp well comes you to the new web page";
+        }
+        alert(5+6)
+
+        console.log("Hello jp");
+        document.getElementById("demo").innerHTML = x;
+        function myFunction(x,y){
+            return x * y;
+        }
+        document.getElementById("demo1").innerHTML = myFunction(5,6);
+        const animal = {
+            name: "xyz",
+            color:"black",
+            place:"Aheemdabad zoo",
+            details:function(){
+            return this.name + " " +this.place;
+            }
+        }
+                    document.getElementById("demo1").innerHTML = animal.details();
+
+        
+    </script>
+    
+</body>
+</html>
